@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/Imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>Credit Card Veryfier</title>
+    <title>Validador de Bandeiras de Cartão de Credito</title>
 </head>
 <body>
     <header>
@@ -18,13 +18,12 @@
                 <input type="text" id="cardNumber" name="cardNumber" placeholder="Digite o número do cartão" required>
                 <button type="submit" onclick="Verificar()">Verificar</button>
             </form>
+            <p>Consiga um numero aleatorio <a href="https://www.4devs.com.br/gerador_de_numero_cartao_credito" target="_blank" rel="external">aqui</a></p>
         </section>
         
         <section>
-            <h3>Sua bandeira</h3>
-            <div id="result"></div>
-          
-             
+            <h3 id="band">Bandeiras</h3>
+            <div id="result"></div>      
         </section>
     </main>
     <footer>
