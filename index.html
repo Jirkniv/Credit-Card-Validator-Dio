@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Credit Card Veryfier</title>
+</head>
+<body>
+    <header>
+        <h1>Validador de Bandeiras de Cartão de Credito</h1>
+    </header>
+    <main>
+        <section>
+            <form id="form">
+                <label for="cardNumber">Número do Cartão</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="Digite o número do cartão" required>
+                <button type="submit" onclick="Verificar()">Verificar</button>
+            </form>
+        </section>
+        
+        <section>
+            <h3>Sua bandeira</h3>
+            <div id="result"></div>
+          
+             
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por </p><a href="https://www.linkedin.com/in/jober-junior-de-moura-pinto-757922333/" target="_blank" rel="external">&copy;Jober Junior</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
