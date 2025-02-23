@@ -8,26 +8,26 @@
     <title>Validador de Bandeiras de Cartão de Credito</title>
 </head>
 <body>
-    <header>
-        <h1>Validador de Bandeiras de Cartão de Credito</h1>
+    <header class="header__container">
+        <h1 header__title>Validador de Bandeiras de Cartão de Credito</h1>
     </header>
-    <main>
-        <section>
+    <main class="main__container">
+        <section class="main__section-form">
             <form id="form">
                 <label for="cardNumber">Número do Cartão</label>
-                <input type="text" id="cardNumber" name="cardNumber" placeholder="Digite o número do cartão" required>
-                <button type="submit" onclick="Verificar()">Verificar</button>
+                <input class="main__input" type="text" id="cardNumber" name="cardNumber" placeholder="Digite o número do cartão" required>
+                <button class="main__button" type="submit" onclick="Verificar()">Verificar</button>
             </form>
             <p>Consiga um número aleatório <a href="https://www.4devs.com.br/gerador_de_numero_cartao_credito" target="_blank" rel="external">aqui</a></p>
         </section>
         
-        <section>
-            <h3 id="band">Bandeiras</h3>
-            <div id="result"></div>      
+        <section class="main__section-result">
+            <h3 class="h3__section-band">Bandeiras</h3>
+            <div id="result" class="div__result"></div>      
         </section>
     </main>
-    <footer>
-        <p>Desenvolvido por </p><a href="https://www.linkedin.com/in/jober-junior-de-moura-pinto-757922333/" target="_blank" rel="external">&copy;Jober Junior</a>
+    <footer class="footer__container">
+        <p class="footer__text">Desenvolvido por </p><a class="footer__link" href="https://www.linkedin.com/in/jober-junior-de-moura-pinto-757922333/" target="_blank" rel="external">&copy;Jober Junior</a>
     </footer>
     <script src="script.js"></script>
 </body>

@@ -4,28 +4,36 @@
     font-weight: normal;
     font-style: normal;
 }
+*{
+    margin:0;
+    padding:0;
+    
+}
+
 body{
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     height: 100vh;
 
 }
-header, main, footer {
+.header__container, .main__container, .footer__container {
     padding: 10px;
     text-align: center;
 }
-header{
+.header__container{
     background-color: #333;
     color: #fff;
     flex: 1;
     font-family: 'God of War';
-    text-shadow: #000 1px 1px 2px;
+    
 }
-main{
+.header__title{
+    text-shadow: #000 1px 1px 2px;
+
+}
+.main__container{
     background-color: #fff;
     color: #000;
     flex: 9;
@@ -33,20 +41,20 @@ main{
 section{
     margin: 20px;
 }
-section > p{
+.main__section-form > p{
     font-size: smaller;
     color: gray;
 
     margin-top: 0px;
 }
-input[type="text"], input[type="number"]{
+.main__input[type="text"], input[type="number"]{
     padding: 5px;
     width: 200px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-button{
+.main__button{
     padding: 5px;
     width: 100px;
     margin-bottom: 10px;
@@ -56,7 +64,7 @@ button{
     cursor: pointer;
     border-radius: 5px;
 }
-button:hover{
+.main__button:hover{
     background-color: #555;
 }
 label{
@@ -64,7 +72,7 @@ label{
     margin-bottom: 5px;
     font-size:large ;
 }
-#result{
+.div__result {
     margin-bottom: 20px;
     padding: 20px;
     height: 105px;
@@ -75,29 +83,29 @@ label{
     background-repeat: no-repeat;
     background-position: center;
 }
-#result p {
+.div__result p {
     color: red;
     font-weight: bold;
 }
-h3{
+.h3__section-band{
     display: inline;
 }
-footer{
+.footer__container{
     background-color: #333;
     color: #fff;
     flex: 0.3;
     
 }
-footer > p{
+.footer__text{
     font-family: 'God of War';
     text-shadow: #000 1px 1px 2px;
     display: inline;
 }
-a{
+.footer__link{
     color: #55dfe4;
     text-decoration: none;
 }
-a:hover{
+.footer__link:hover{
     text-decoration: underline;
     color: #55e4a8;
 }
