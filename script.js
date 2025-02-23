@@ -16,7 +16,8 @@ function Verificar(event) {
 
     if (cardType) {
         resultDiv.innerHTML = `<p></p>`;
-        resultDiv.style.backgroundImage = `url('Imagens/Card${cardType}.png')`;
+        resultDiv.style.backgroundImage = `url('https://res.cloudinary.com/dvy2e8yoz/image/upload/v1740284827/${cardType}.png')`;
+        
         bandHeader.innerHTML = cardType;
     } else {
         resultDiv.innerHTML = `<p>Bandeira não reconhecida.</p>`;
@@ -54,16 +55,17 @@ function isValidCardNumber(number) {
 
 function getCardType(number) {
     const cardPatterns = {
-        visa: /^4[0-9]{12}(?:[0-9]{3})?$/,
-        mastercard: /^5[1-5][0-9]{14}$/,
-        amex: /^3[47][0-9]{13}$/,
-        diners: /^3(?:0[0-5]|[68][0-9])[0-9]{11}$/,
-        discover: /^6(?:011|5[0-9]{2})[0-9]{12}$/,
-        jcb: /^(?:2131|1800|35\d{3})\d{11}$/,
-        hiper: /^(606282\d{10}(\d{3})?)|(3841\d{15})$/,
-        aura: /^50([0-9]{2})(\d{12})$/,
-        voyager: /^8699([0-9]{11})$/,
-        enroute:/^2(?:149|014)[0-9]{11}$/
+        Cardvisa_jhqfhk: /^4[0-9]{12}(?:[0-9]{3})?$/,
+        Cardmastercard_lytm8s
+: /^5[1-5][0-9]{14}$/,
+        Cardamex_utuofj: /^3[47][0-9]{13}$/,
+        Carddiners_l7oa83: /^3(?:0[0-5]|[68][0-9])[0-9]{11}$/,
+        Carddiscover_kxjzjq: /^6(?:011|5[0-9]{2})[0-9]{12}$/,
+        CardJcb_neohju: /^(?:2131|1800|35\d{3})\d{11}$/,
+        Cardhiper_he9zsz: /^(606282\d{10}(\d{3})?)|(3841\d{15})$/,
+        Cardaura_o3ulso: /^50([0-9]{2})(\d{12})$/,
+        Cardvoyager_wcf5iq: /^8699([0-9]{11})$/,
+        CardJcb_neohju:/^2(?:149|014)[0-9]{11}$/
     };
 
     for (const [card, pattern] of Object.entries(cardPatterns)) {
