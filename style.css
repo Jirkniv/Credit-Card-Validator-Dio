@@ -15,7 +15,10 @@ body{
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
+    min-width:100wh;
+    align-items:center;
+    justify-content:center
 
 }
 .header__container, .main__container, .footer__container {
@@ -25,8 +28,9 @@ body{
 .header__container{
     background-color: #333;
     color: #fff;
-    flex: 1;
+    flex-shrink: 0;
     font-family: 'God of War';
+    min-width: 100vw;
     
 }
 .header__title{
@@ -36,10 +40,16 @@ body{
 .main__container{
     background-color: #fff;
     color: #000;
-    flex: 9;
+    flex-grow: 2;
+    min-width:100vw;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    
 }
 section{
     margin: 20px;
+    max-width: 600px;
 }
 .main__section-form > p{
     font-size: smaller;
@@ -93,7 +103,8 @@ label{
 .footer__container{
     background-color: #333;
     color: #fff;
-    flex: 0.3;
+    flex-grow: 0;
+    min-width:100vw;
     
 }
 .footer__text{
@@ -110,3 +121,18 @@ label{
     color: #55e4a8;
 }
 
+@media (max-width: 480px) {
+    .main__container {
+        padding: 10px; 
+    }
+
+    section {
+        margin: 10px auto;
+        max-width: 90%;
+    }
+
+    .div__result {
+        height: 90px;
+        max-width: 200px;
+    }
+}
